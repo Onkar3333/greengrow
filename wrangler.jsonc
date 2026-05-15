@@ -1,0 +1,33 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "greengear-agro",
+  "compatibility_date": "2025-09-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "src/server.ts",
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "greengear-db",
+      "database_id": "REPLACE_WITH_YOUR_D1_ID",
+    },
+  ],
+
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "REPLACE_WITH_YOUR_KV_ID",
+    },
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "greengear-assets",
+    },
+  ],
+
+  "ai": {
+    "binding": "AI",
+  },
+}
